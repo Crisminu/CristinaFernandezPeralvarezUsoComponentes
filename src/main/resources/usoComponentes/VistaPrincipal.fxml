@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="482.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="usoComponentes.ControladorPrincipal">
+   <children>
+      <Pane layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="482.0">
+         <children>
+            <VBox layoutX="1.0" layoutY="89.0" prefHeight="358.0" prefWidth="476.0">
+               <children>
+                  <fx:include fx:id="compImagen" source="./Imagen.fxml" />
+                  <fx:include fx:id="compNombre" source="./Nombre.fxml" />
+               </children>
+               <padding>
+                  <Insets left="80.0" top="20.0" />
+               </padding>
+            </VBox>
+            <Label layoutX="178.0" layoutY="14.0" prefHeight="32.0" prefWidth="154.0" text="Elige un departamento: " />
+            <RadioButton fx:id="rMark" layoutX="63.0" layoutY="64.0" mnemonicParsing="false" onAction="#getInfo" selected="true" text="Marketing">
+               <toggleGroup>
+                  <ToggleGroup fx:id="tg" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="rVentas" layoutX="196.0" layoutY="64.0" mnemonicParsing="false" onAction="#getInfo" text="Ventas" toggleGroup="$tg" />
+            <RadioButton fx:id="rProd" layoutX="318.0" layoutY="64.0" mnemonicParsing="false" onAction="#getInfo" text="Producción" toggleGroup="$tg" />
+            <VBox layoutX="1.0" layoutY="495.0" prefHeight="152.0" prefWidth="482.0">
+               <children>
+                  <Label fx:id="txtFormacion" prefHeight="25.0" prefWidth="288.0" />
+                  <Label fx:id="txtExperiencia" prefHeight="25.0" prefWidth="288.0" />
+                  <Label fx:id="txtDescripcion" prefHeight="25.0" prefWidth="288.0" />
+               </children>
+               <padding>
+                  <Insets left="80.0" />
+               </padding>
+            </VBox>
+      
+      
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

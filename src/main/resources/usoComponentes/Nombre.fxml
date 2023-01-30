@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="136.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="componentes.ControladorNombre">
+   <children>
+      <Label id="lblTitulo" fx:id="lblEmpresa" layoutX="14.0" layoutY="28.0" />
+      <Label id="txtDepartamento" fx:id="txtDepartamento" layoutX="14.0" layoutY="68.0" />
+   </children>
+</AnchorPane>
